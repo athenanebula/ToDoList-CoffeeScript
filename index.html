@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>MyApp</title>
+    <link rel="stylesheet" type="text/css" href="dist/css/styles.css" />
+</head>
+<body>
+    <h1>ToDo List</h1>
+    <div style="display: flex; max-width: 800px">
+        <form id="todo_add" style="flex-grow: 1; justify-content: space-between;" class="todo_add">
+            <input type="text" id="add_item" class="add_item" placeholder="New todo" required />
+            <input type="submit" style="width: 100px" value="Add todo" class="add_item_button"/>
+        </form>
+        <input type="submit" id="delete_all" style="width: 100px" value="Del all check" class="delete_button"/>
+    </div>
+
+    <div id="todo_list" class="todo_list"></div>
+    <script src="dist/js/default.js"></script>
+</body>
+</html>
